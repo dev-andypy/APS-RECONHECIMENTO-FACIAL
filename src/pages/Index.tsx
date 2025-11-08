@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Shield, UserPlus, ScanFace, LogOut, Lock } from "lucide-react";
+import { Fingerprint, UserPlus, ScanFace, LogOut, Lock } from "lucide-react";
 import { toast } from "sonner";
 
 const Index = () => {
@@ -76,32 +76,32 @@ const Index = () => {
         <Card className="w-full max-w-2xl shadow-lg text-center">
           <CardHeader className="space-y-4">
             <div className="mx-auto bg-gradient-to-br from-primary to-accent p-6 rounded-full w-24 h-24 flex items-center justify-center shadow-md">
-              <Shield className="w-12 h-12 text-primary-foreground" />
+              <Fingerprint className="w-12 h-12 text-primary-foreground" />
             </div>
             <CardTitle className="text-3xl font-bold">
-              Sistema de Reconhecimento Facial
+              Portal de Acesso Biométrico
             </CardTitle>
-            <CardDescription className="text-lg">
-              Ministério do Meio Ambiente - Controle de Acesso por Biometria
+            <CardDescription className="text-lg font-bold">
+              Sistema Biométrico de Acesso – Ministério do Meio Ambiente
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-6 pb-8">
             <div className="grid gap-4 text-left">
-              <div className="flex items-start gap-3 p-4 bg-muted rounded-lg">
+              <div className="flex items-start gap-3 p-4 rounded-lg" style={{ backgroundColor: "#171616" }}>
                 <Lock className="w-6 h-6 text-primary mt-1" />
                 <div>
                   <h3 className="font-semibold">Nível 1 - Acesso Geral</h3>
                   <p className="text-sm text-muted-foreground">Permissões básicas do sistema</p>
                 </div>
               </div>
-              <div className="flex items-start gap-3 p-4 bg-muted rounded-lg">
+              <div className="flex items-start gap-3 p-4 rounded-lg" style={{ backgroundColor: "#171616" }}>
                 <Lock className="w-6 h-6 text-secondary mt-1" />
                 <div>
                   <h3 className="font-semibold">Nível 2 - Diretores de Divisões</h3>
                   <p className="text-sm text-muted-foreground">Acesso restrito a áreas específicas</p>
                 </div>
               </div>
-              <div className="flex items-start gap-3 p-4 bg-muted rounded-lg">
+              <div className="flex items-start gap-3 p-4 rounded-lg" style={{ backgroundColor: "#171616" }}>
                 <Lock className="w-6 h-6 text-accent mt-1" />
                 <div>
                   <h3 className="font-semibold">Nível 3 - Ministro</h3>
@@ -133,7 +133,7 @@ const Index = () => {
           <Card className="shadow-md border-2 border-primary">
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
-                <Shield className="w-5 h-5" />
+                <Fingerprint className="w-5 h-5" />
                 Cadastro Ativo
               </CardTitle>
             </CardHeader>

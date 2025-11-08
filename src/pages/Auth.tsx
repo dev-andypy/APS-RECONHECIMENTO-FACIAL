@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { toast } from "sonner";
-import { Shield, Lock } from "lucide-react";
+import { Fingerprint, Lock } from "lucide-react";
 
 const Auth = () => {
   const navigate = useNavigate();
@@ -67,7 +67,7 @@ const Auth = () => {
       <Card className="w-full max-w-md shadow-lg">
         <CardHeader className="space-y-4 text-center">
           <div className="mx-auto bg-gradient-to-br from-primary to-accent p-4 rounded-full w-16 h-16 flex items-center justify-center shadow-md">
-            <Shield className="w-8 h-8 text-primary-foreground" />
+            <Fingerprint className="w-8 h-8 text-primary-foreground" />
           </div>
           <CardTitle className="text-2xl font-bold">
             {isLogin ? "Acesso ao Sistema" : "Cadastro de Usuário"}

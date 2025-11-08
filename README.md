@@ -75,7 +75,7 @@ Este projeto implementa um **Sistema de Reconhecimento Facial** para controle de
 ### Passos
 1. **Clone o repositório**:
     ```bash
-    git clone https://github.com/LeonardoFreire43/APS-RECONHECIMENTO-FACIAL.git
+    git clone https://github.com/dev-andypy/APS-RECONHECIMENTO-FACIAL.git
     cd APS-RECONHECIMENTO-FACIAL
     ```
 2. **Instale as dependências**:
